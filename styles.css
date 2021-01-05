@@ -1,7 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+  --primary-color: #264653;
+  --secondary-color:#376172;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
+}
+
+header {
+  background-color:var(--primary-color);
+}
+
+#header-img {
+  max-width:68px;
+}
+
+.nav-link {
+  text-decoration:none;
+  color:white;
+  padding:1rem 2rem;
+}
+
+#nav-bar{
+  text-align:right;
+  padding: 1rem;
+}
+
+
+#header {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}​
+
+.hero{
+  color: var(--primary-color);
+  text-align:center;
+  padding: 4rem 4rem 1rem 4rem;
+}
+
+#form {
+  padding:4rem;
+  text-align:center;
+}
+
+#email{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#submit{
+  color:white;
+  background-color: var(--primary-color);
+  padding: 12px 20px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.container
+{
+ text-align: center;
+ list-style-position: inside;
+ padding:1rem;
+}
+
+.parent-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+ol li {
+  text-align: left;
+}
+
+@media (hover: hover) {
+  #submit:hover {
+    background: var(--secondary-color);
+  }
 }
 
